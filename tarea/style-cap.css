@@ -1,0 +1,25 @@
+.titulo {
+  color: blue;
+  margin-left: 35%;
+  margin-right: 33%;
+  font-size: 400%;
+  border: red 1px solid;
+}
+.imagen {
+  width: 255px;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+.centrar {
+  margin: 5%;
+  font-style: italic;
+  font-size: 115%;
+  background-color: rgba(0, 0, 0, 0.281);
+  color: azure;
+}
+body {
+  background-image: url("../img/cap.jpg");
+  background-size: cover;
+  background-position: center top;
+  box-sizing: border-box;
+}

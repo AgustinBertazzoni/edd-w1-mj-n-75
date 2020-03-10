@@ -1,0 +1,22 @@
+.titulo {
+  color: red;
+  font-size: 400%;
+  margin-left: 40%;
+  margin-right: 42%;
+  border: solid 1px gold;
+}
+
+.centrar {
+  margin: 5%;
+  font-style: italic;
+  font-size: 115%;
+}
+
+body {
+  background-image: url("../img/iron.jpg");
+  background-size: cover;
+}
+p {
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.336);
+}

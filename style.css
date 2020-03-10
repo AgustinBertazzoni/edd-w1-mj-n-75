@@ -1,0 +1,42 @@
+h1 {
+  color: rgb(110, 110, 224);
+  margin-left: 40%;
+}
+body {
+  background-image: url("img/torre.jpg");
+  background-size: cover;
+  background-position: center top;
+  font-style: italic;
+}
+#container {
+  width: 70%;
+  margin: auto;
+  float: right;
+}
+.imagen {
+  width: 255px;
+  margin: auto;
+  display: block;
+}
+#container {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#menu {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#vengadores {
+  color: rgba(136, 35, 65, 0.664);
+  margin: 0% 32%;
+}
+#li {
+  color: rgb(117, 35, 194);
+  margin: 0% 83% 0% 0%;
+}

@@ -1,0 +1,14 @@
+.titulo {
+  color: red;
+  margin-left: 39%;
+}
+.imagen {
+  width: 255px;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+.centrar {
+  margin: 5%;
+  font-style: italic;
+  font-size: 115%;
+}
