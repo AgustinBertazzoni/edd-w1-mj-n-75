@@ -1,9 +1,7 @@
 :root {
   font-size: 62.5%;
 }
-* {
-  outline: dotted 1px red;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #232323;
@@ -38,9 +36,9 @@ nav li a {
   text-decoration: none;
 }
 #noticias-destacadas {
-  width: 300vw;
+  /*width: 300vw;*/
   overflow: auto;
-  animation: 15s slider infinite;
+  /*animation: 15s slider infinite;*/
 }
 figure {
   float: left;
@@ -98,6 +96,10 @@ figure h2 {
   padding: 1rem;
 }
 
+#tabla-resultados table td {
+  line-height: 300%;
+}
+/*Animaciones css*/
 @keyframes slider {
   0% {
     margin-left: 0;
@@ -120,3 +122,55 @@ figure h2 {
     margin-left: -200vw;
   }
 }
+button {
+  display: none;
+}
+
+/*media queries para mobile*/
+/*siempre va con el meta del viuport*/
+@media screen and (max-width: 600px) {
+  /*inicio media query*/
+
+  .noticia {
+    flex-direction: column;
+  }
+  .noticia-img,
+  .noticia-txt {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  button {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  nav {
+    display: none;
+    float: none;
+    clear: left;
+    padding-top: 1rem;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+  }
+  button:focus + nav {
+    display: block;
+  }
+
+  /*Fin media query*/
+}
+
+/*para girar el cel
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  header {
+    background-color: green;
+  }
+}*/
