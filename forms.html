@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <form
+            action="https://webhook.site/7aa6ee08-4663-4b60-853f-0f4409c8376c"
+            method="GET"
+          >
+            <div class="form-group">
+              <label for="username"> Nombre de usuario</label>
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                name="username"
+                placeholder="Usuario"
+                id="username"
+                required
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <form
+            action="https://webhook.site/7aa6ee08-4663-4b60-853f-0f4409c8376c"
+            method="GET"
+          >
+            <div>
+              <label for="pass"> Constraseña</label>
+              <input
+                class="form-control"
+                type="password"
+                name="pass"
+                id="pass"
+                required
+              />
+            </div>
+          </form>
+          <small class="form-text">Contraseña minimo 5 caracteres</small>
+          <br />
+          <button class="btn btn-warning" type="submit">Enviar</button>
+          <button class="btn btn-success" type="reset">reset</button>
+        </div>
+        <div class="col-6">
+          <form
+            action="https://webhook.site/7aa6ee08-4663-4b60-853f-0f4409c8376c"
+          >
+            <div>
+              <label for="Email">Email</label>
+              <input type="email" id="Email" name="email" required />
+            </div>
+            <div>
+              <label for="edad">Ingresa tu edad</label>
+              <input
+                type="number"
+                name="edad"
+                id="edad"
+                min="1"
+                max="80"
+                placeholder=""
+                required
+              />
+            </div>
+            <div>
+              <label for="fecha">Ingresa tu cumpleaños</label>
+              <input type="date" name="fecha" id="fecha" />
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Default checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck2"
+                disabled
+              />
+              <label class="form-check-label" for="defaultCheck2">
+                Disabled checkbox
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+                disabled
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >3 (disabled)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input position-static"
+                type="checkbox"
+                id="blankCheckbox"
+                value="option1"
+                aria-label="..."
+              />
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input position-static"
+                type="radio"
+                name="blankRadio"
+                id="blankRadio1"
+                value="option1"
+                aria-label="..."
+              />
+            </div>
+            <form
+              name="input"
+              action="index.php"
+              method="post"
+              onsubmit="return verificaRadios(this)"
+            >
+              <input type="radio" name="dia" value="lunes" /> Lunes<br />
+              <input type="radio" name="dia" value="martes" /> Martes<br />
+              <input type="radio" name="dia" value="miercoles" />
+              Miercoles<br />
+              <input type="radio" name="dia" value="jueves" /> Jueves<br />
+              <input type="radio" name="dia" value="viernes" /> Viernes<br />
+              <input type="submit" name="submit" value="Submit" />
+            </form>
+
+            <input type="hidden" name="Informacion escondida" value="1" />foto
+
+            <div>
+              <label for="archivo"> Subi tu archivo </label>
+              <input type="file" name="archivo" id="archivo" />
+            </div>
+            <div>
+              <label for="text">ingresa telefono</label>
+              <input type="tel" name="telefono" id="telefono" />
+            </div>
+            <div>
+              <label for="url">url</label>
+              <input type="url" name="url" id="url" />
+            </div>
+            <div>
+              <label for="color">color</label>
+              <input type="color" name="color" id="color" />
+            </div>
+            <div>
+              <h3>SELECT</h3>
+              <div>
+                <label for="colorojos">color de ojos</label>
+                <select name="colorojos" id="colorojos">
+                  <option value="marron">marron</option>
+                  <option value="verde">verde</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <h3>textarea</h3>
+              <label for="bio">Biografia</label>
+              <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
